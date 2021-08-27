@@ -17,8 +17,9 @@ CREATE TABLE meta(
     id INTEGER NOT NULL AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     descricao VARCHAR(255) NOT NULL,
+    dataFinal date NOT NULL,
     saldoFinal FLOAT NOT NULL,
-       saldoAtual FLOAT NOT NULL,
+    saldoAtual FLOAT NOT NULL,
     idUsuario INTEGER NOT NULL,
     CONSTRAINT pk_meta PRIMARY KEY (id),
     CONSTRAINT fk_usuario FOREIGN KEY (idUsuario)
